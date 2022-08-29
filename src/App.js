@@ -8,8 +8,23 @@ function App() {
   return (
     <Window>
       <ModuleBar
-        leftModules={["sfaf", "fasfsafsaf", "safa"]}
-        rightModules={["sfaf", "fasfsafsaf", "safa"]}
+        leftModules={[
+          "New Incident",
+          "New Message",
+          "Deploy Procedure",
+          "Quick Launch",
+          "Phone Dialer",
+        ]}
+        rightModules={[
+          "Summary",
+          "Incidents",
+          "Maps",
+          "Messages",
+          "Sensors",
+          "Video",
+          "Access Control",
+          "Administration",
+        ]}
       />
       <EntityPane />
     </Window>

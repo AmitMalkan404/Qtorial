@@ -1,6 +1,12 @@
 .barContainer {
+  display: flex;
   flex: 1;
   flex-direction: row;
   justify-content: space-between;
+  align-items: flex-end;
   background-color: black;
+}
+
+.button {
+  height: 100%;
 }

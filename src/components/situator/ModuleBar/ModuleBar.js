@@ -6,7 +6,9 @@ const ModuleBar = (props) => {
     return (
       <span>
         {props.leftModules.map((op) => (
-          <button>{op}</button>
+          <button className="button" key={op}>
+            {op}
+          </button>
         ))}
       </span>
     );
@@ -15,7 +17,9 @@ const ModuleBar = (props) => {
     return (
       <span>
         {props.rightModules.map((op) => (
-          <button>{op}</button>
+          <button className="button" key={op}>
+            {op}
+          </button>
         ))}
       </span>
     );
@@ -23,9 +27,8 @@ const ModuleBar = (props) => {
 
   return (
     <div className="barContainer">
-      {generateLeftModule}
-
-      {generateRightModule}
+      {generateLeftModule()}
+      {generateRightModule()}
     </div>
   );
 };

@@ -1,0 +1,7 @@
+.window {
+  height: 100vh;
+  display: flex;
+  flex: 7;
+  background-color: blue;
+  flex-direction: column;
+}

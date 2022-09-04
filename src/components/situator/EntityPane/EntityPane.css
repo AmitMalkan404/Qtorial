@@ -1,4 +1,40 @@
-.container {
-  flex: 6;
-  background-color: azure;
+.entity-panel-container {
+    display: grid;
+    grid-template-rows: 3% 3% 3% 91%;
+}
+.entity-panel-header-name {
+    background-color: #282c34;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    align-items: center;
+    display: flex;
+    padding-left: 20px;
+}
+.entity-panel-header-type {
+    font-weight: normal;
+    padding-left: 8px;
+    font-size: 14px;
+}
+.entity-panel-header-time{
+    background-color: #282c34;
+    color: white;
+    padding-left: 5px;
+    font-size: 14px;
+}
+.entity-panel-tabs{
+    background-color: lightgray;
+    border-bottom: 1px solid #00948E;
+}
+.entity-panel-tab-text{
+    background-color: #00948E;
+    color: white;
+    padding-left: 20px;
+    height: 100%;
+    width: 80px;
+}
+.entity-panel{
+    background-color: white;
+    margin: 3px;
+    border: 1px solid #00948E;
 }

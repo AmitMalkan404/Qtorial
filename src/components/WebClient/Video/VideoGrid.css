@@ -1,0 +1,15 @@
+.video-grid-class {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+    "slot slot"
+    "slot slot";
+    grid-area: video-grid;
+}
+
+.slot {
+    /*max-height: 180px;*/
+    /*max-width: 320px;*/
+}

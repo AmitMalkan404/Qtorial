@@ -1,0 +1,63 @@
+.backdrop {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 10;
+    background: rgba(0, 0, 0, 0.75);
+}
+
+.modal {
+    position: absolute;
+    z-index: 10;
+    /*overflow: hidden;*/
+    display: flex;
+    flex: 1;
+    pointer-events: none;
+    height: 100vh;
+    width: 100%;
+}
+
+.tutorial-container{
+    position: absolute;
+    z-index: 10;
+    height: 100%;
+    width: 100%;
+    /*overflow: hidden;*/
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    pointer-events: none;
+}
+
+.model-container{
+    display: flex;
+    width: 100%;
+    padding-top: 30%;
+    padding-left: 50%;
+    /*pointer-events: none;*/
+}
+
+.dialog-box{
+    min-height: 100px;
+    min-width: 300px;
+    background-color: olivedrab;
+    position: relative;
+    border-radius: 20%;
+    color: white;
+    z-index: 11;
+    right: 0px;
+}
+
+.right-point{
+    width: 0;
+    height: 0;
+    border-left: 2vh solid transparent;
+    border-right: 2vh solid transparent;
+    border-top: 10vh solid olivedrab;
+    position: absolute;
+    top: 0%;
+    right: -10%;
+    transform: rotate(-60deg);
+}

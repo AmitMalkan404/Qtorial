@@ -1,0 +1,9 @@
+.entity-container{
+    display: grid;
+    grid-template-columns: 25% 0.5% 74.5%;
+    flex: 8;
+    background-color: white;
+}
+.separator{
+    background-color: #323742;
+}

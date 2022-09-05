@@ -5,6 +5,7 @@ import ModuleBar from "./components/situator/ModuleBar/ModuleBar";
 import EntityPane from "./components/situator/EntityPane/EntityPane";
 import {useState} from "react";
 import VideoModule from "./components/WebClient/Video/VideoModule";
+import EntityContainer from "./components/situator/EntityContainer/EntityContainer";
 
 export const Product = {
     Situator: 0,
@@ -52,6 +53,8 @@ function App() {
         {currentProduct=== Product.WebClient &&(
             <VideoModule/>
         )}
+      />
+      <EntityContainer />
     </Window>
     );
 }

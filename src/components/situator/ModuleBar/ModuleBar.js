@@ -6,7 +6,13 @@ const ModuleBar = (props) => {
     return (
       <span>
         {props.leftModules.map((op) => (
-          <button className="button" key={op}>
+          <button
+            id={op}
+            type="button"
+            className="button"
+            key={op}
+            onClick={() => alert("ckcsa")}
+          >
             {op}
           </button>
         ))}

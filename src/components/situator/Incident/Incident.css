@@ -1,0 +1,29 @@
+.incidentWrapper{
+    display: flex;
+    flex-direction: column;
+    height: 65px;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+    padding-left: 20px;
+    padding-right: 10px;
+}
+
+.incident-row-container{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 8px;
+}
+.incident-name-text{
+    font-size: 20px;
+    color: #00948E;
+    font-weight: bold;
+}
+
+.incident-type-text{
+    font-size: 15px;
+    color: gray;
+}
+.selected{
+    background-color: lightgray;
+}

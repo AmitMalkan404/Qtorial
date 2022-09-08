@@ -17,6 +17,43 @@ function App() {
     const [currentProduct, setCurrentProduct] = useState(null)
 
 
+    const renderContent = () => {
+
+        switch (currentProduct) {
+            case Product.WebClient:
+                return <VideoModule/>;
+                break;
+            case Product.Situator:
+                return (
+                    <div><ModuleBar
+                        leftModules={[
+                            "New Incident",
+                            "New Message",
+                            "Deploy Procedure",
+                            "Quick Launch",
+                            "Phone Dialer",
+                        ]}
+                        rightModules={[
+                            "Summary",
+                            "Incidents",
+                            "Maps",
+                            "Messages",
+                            "Sensors",
+                            "Video",
+                            "Access Control",
+                            "Administration",
+                        ]}
+                    />
+                    <EntityPane />
+        <EntityContainer />
+                    </div>)
+                break;
+            default:
+                return null;
+                break;
+        }
+    }
+
     return (
     <Window>
         {currentProduct===null && (<div>
@@ -30,31 +67,7 @@ function App() {
               Cayuga
           </button>
       </div>)}
-        {currentProduct===Product.Situator && (<ModuleBar
-        leftModules={[
-          "New Incident",
-          "New Message",
-          "Deploy Procedure",
-          "Quick Launch",
-          "Phone Dialer",
-        ]}
-        rightModules={[
-          "Summary",
-          "Incidents",
-          "Maps",
-          "Messages",
-          "Sensors",
-          "Video",
-          "Access Control",
-          "Administration",
-        ]}
-      /> &&
-      <EntityPane />)}
-        {currentProduct=== Product.WebClient &&(
-            <VideoModule/>
-        )}
-      />
-      <EntityContainer />
+        {renderContent()}
     </Window>
     );
 }
